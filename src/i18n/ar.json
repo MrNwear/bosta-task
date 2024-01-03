@@ -1,0 +1,15 @@
+{
+  "translation": {
+    "header": {
+      "title": "بوسطه",
+      "tabs": {
+        "home": "الرئيسية",
+        "pricing": "الاسعار",
+        "call-center": "كلم المبيعات",
+        "track-order": "تتبع شحنتك",
+        "login": "تسجيل الدخول"
+      },
+      "switchLanguage": "En"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "translation": {
+    "header": {
+      "title": "Bosta",
+      "tabs": {
+        "home": "Home",
+        "pricing": "Pricing",
+        "call-center": "Call Center",
+        "track-order": "Track Shipping",
+        "login": "Login"
+      },
+      "switchLanguage": "عربي"
+    }
+  }
+}
