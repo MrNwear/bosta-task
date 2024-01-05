@@ -9,7 +9,17 @@
         "track-order": "Track Shipping",
         "login": "Login"
       },
-      "switchLanguage": "عربي"
+      "switchLanguage": "عربي",
+      "input-error": "please enter Numbers "
+    },
+    "track-order-page": {
+      "provider": "Provider",
+      "track-number": "Tracking Number ",
+      "last-update": "last update",
+      "promised-date": "promised date",
+      "CANCELLED": "Cancelled",
+      "DELIVERED": "Delivered",
+      "DELIVERED_TO_SENDER": "Reterned to The Sender"
     }
   }
 }

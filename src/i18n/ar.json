@@ -7,9 +7,19 @@
         "pricing": "الاسعار",
         "call-center": "كلم المبيعات",
         "track-order": "تتبع شحنتك",
-        "login": "تسجيل الدخول"
+        "login": "تسجيل الدخول",
+        "input-error": "الرجاء ادخال ارقام بالانجليزيه"
       },
       "switchLanguage": "En"
+    },
+    "track-order-page": {
+      "provider": "اسم التاجر",
+      "track-number": " رقم الشحنة",
+      "last-update": "اخر تحديث",
+      "promised-date": "موعد التسليم خلال",
+      "CANCELLED": "تم الغاء الشحنه",
+      "DELIVERED": "تم تسليم الشحنه",
+      "DELIVERED_TO_SENDER": "تم إرجاع الشحنه"
     }
   }
 }
