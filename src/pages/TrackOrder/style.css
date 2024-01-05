@@ -1,0 +1,19 @@
+.order-summary {
+  border: 1px solid #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px 100px;
+  direction: rtl;
+}
+
+.order-detail {
+  flex-direction: column;
+}
+.rts {
+  direction: rtl;
+}
+.ltrs {
+  direction: ltr;
+}
