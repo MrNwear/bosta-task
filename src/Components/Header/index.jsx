@@ -48,9 +48,7 @@ const Header = () => {
         <ul className="navbar">
           <li>{t("header.tabs.home")}</li>
           <li>{t("header.tabs.pricing")}</li>
-          <NavLink to={"track-order"}>
-            <li>{t("header.tabs.call-center")}</li>
-          </NavLink>
+          <li>{t("header.tabs.call-center")}</li>
         </ul>
       </nav>
       <div className="navbar">

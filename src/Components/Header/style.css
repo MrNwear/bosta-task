@@ -16,7 +16,9 @@
   margin: 0;
   column-gap: 30px;
   list-style: none;
+  cursor: pointer;
 }
+
 .inputWithButton {
   position: absolute;
   top: 60px;
