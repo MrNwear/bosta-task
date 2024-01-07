@@ -49,3 +49,7 @@
 .inputWithButton .error {
   color: red;
 }
+.language-button {
+  color: #f41111;
+  font-weight: bold;
+}

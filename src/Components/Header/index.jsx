@@ -75,9 +75,12 @@ const Header = () => {
           </div>
         </div>
         <span>{t("header.tabs.login")}</span>
-        <button onClick={() => changeLanguage(isArabic ? "en" : "ar")}>
+        <span
+          className="language-button"
+          onClick={() => changeLanguage(isArabic ? "en" : "ar")}
+        >
           {t("header.switchLanguage")}
-        </button>
+        </span>
       </div>
     </header>
   );
