@@ -7,6 +7,7 @@ import { fetchOrderDetails } from "../../redux/orderDetailsSlice/thunk";
 import "./style.css";
 import { AiOutlineSearch } from "react-icons/ai";
 import { isNumber } from "../../utils/helperFunctions";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -16,6 +17,7 @@ const Header = () => {
     value: "",
     error: "",
   });
+  const navigate = useNavigate();
   const onInputChange = (e) => {
     const inputValue = e.target.value;
     if (isNumber(inputValue))
@@ -25,9 +27,12 @@ const Header = () => {
     }
   };
   const onTrackOrderPress = () => {
-    dispatch(fetchOrderDetails(shippingNumber.value)).then(() => {
-      setVisible(false);
-    });
+    dispatch(fetchOrderDetails(shippingNumber.value))
+      .then(() => {})
+      .finally(() => {
+        setVisible(false);
+        navigate("/track-order");
+      });
   };
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -36,12 +41,16 @@ const Header = () => {
   const isArabic = i18n.language === "ar";
   return (
     <header className={`container ${isArabic ? "rtl" : "ltr"}`}>
-      <Logo />
+      <NavLink to={"/"}>
+        <Logo />
+      </NavLink>
       <nav>
         <ul className="navbar">
           <li>{t("header.tabs.home")}</li>
           <li>{t("header.tabs.pricing")}</li>
-          <li>{t("header.tabs.call-center")}</li>
+          <NavLink to={"track-order"}>
+            <li>{t("header.tabs.call-center")}</li>
+          </NavLink>
         </ul>
       </nav>
       <div className="navbar">
