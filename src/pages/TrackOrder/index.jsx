@@ -84,8 +84,8 @@ function TrackOrderPage() {
                   return (
                     <div className="detail">
                       <span>{item?.hub || "---"}</span>
-                      <span>{date}</span>
-                      <span>{time}</span>
+                      <span>{date || "---"}</span>
+                      <span>{time || "---"}</span>
                       <span>{item?.state || "---"}</span>
                     </div>
                   );
