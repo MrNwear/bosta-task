@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import "./style.css";
 import { useTranslation } from "react-i18next";
 import { colors } from "../../utils/colors";
+import OrderNotFound from "../../Components/OrderNotFound";
 
 const formatOptions = {
   weekday: "long",
@@ -52,15 +53,17 @@ function TrackOrderPage() {
           <div className="order-detail">
             <h3>{t("track-order-page.promised-date")}</h3>
             <span>
-              {new Date("2023-04-01T00:00:00.000Z").toLocaleString(
-                isArabic ? "ar" : "en",
-                formatOptions
-              )}
+              {orderDetails?.PromisedDate
+                ? new Date(orderDetails?.PromisedDate).toLocaleString(
+                    isArabic ? "ar" : "en",
+                    formatOptions
+                  )
+                : t("track-order-page.no-data")}
             </span>
           </div>
         </div>
       ) : (
-        <h1>Order Not Found </h1>
+        <OrderNotFound />
       )}
     </div>
   );
