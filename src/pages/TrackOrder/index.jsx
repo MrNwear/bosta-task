@@ -20,9 +20,9 @@ function TrackOrderPage() {
   const isArabic = i18n.language === "ar";
 
   return (
-    <div className="order-container">
+    <div className={`order-container ${isArabic ? "rtl" : "ltr"}`}>
       {orderDetails != null ? (
-        <div className={`order-summary ${isArabic ? "rtl" : "ltr"}`}>
+        <div className={`order-summary `}>
           <div className="order-detail">
             <h3>
               {t("track-order-page.track-number") +
