@@ -19,7 +19,9 @@
       "promised-date": "promised date",
       "CANCELLED": "Cancelled",
       "DELIVERED": "Delivered",
-      "DELIVERED_TO_SENDER": "Reterned to The Sender"
+      "DELIVERED_TO_SENDER": "Reterned to The Sender",
+      "no-order-found": "There is no order with this number",
+      "no-data": "No Data"
     }
   }
 }

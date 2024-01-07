@@ -19,7 +19,9 @@
       "promised-date": "موعد التسليم خلال",
       "CANCELLED": "تم الغاء الشحنه",
       "DELIVERED": "تم تسليم الشحنه",
-      "DELIVERED_TO_SENDER": "تم إرجاع الشحنه"
+      "DELIVERED_TO_SENDER": "تم إرجاع الشحنه",
+      "no-order-found": "لا يوجد طلب بهذا الرقم",
+      "no-data": "لا يوجد"
     }
   }
 }
