@@ -21,7 +21,14 @@
       "DELIVERED": "Delivered",
       "DELIVERED_TO_SENDER": "Reterned to The Sender",
       "no-order-found": "There is no order with this number",
-      "no-data": "No Data"
+      "no-data": "No Data",
+      "dummy-address": "15 elsallab st. , nasr city , cairo",
+      "order-details": "Shipping Details",
+      "order-address": "Shipping Address ",
+      "hub": "Hub",
+      "date": "Date",
+      "time": "Time",
+      "details": "Details"
     }
   }
 }

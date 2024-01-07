@@ -25,3 +25,44 @@
 .ltrs {
   direction: ltr;
 }
+.section2-container {
+  display: flex;
+  margin: 20px 0;
+  column-gap: 60px;
+}
+.section2-container .order-transits-details {
+  width: 70%;
+  row-gap: 40px;
+}
+.section2-container .order-address {
+  width: 30%;
+}
+.section2-container .order-transits-details .details-container {
+  border: 1px solid #eeeeee;
+  border-radius: 20px;
+}
+
+.section2-container .order-transits-details .details-container .columns-titles {
+  background-color: #eee;
+  display: flex;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+}
+.section2-container
+  .order-transits-details
+  .details-container
+  .columns-titles
+  span,
+.section2-container .order-transits-details .details-container .detail span {
+  width: 25%;
+}
+.section2-container .order-transits-details .details-container .detail {
+  display: flex;
+  padding: 20px;
+}
+
+.order-address .address-container {
+  padding: 5px 10px;
+  background-color: #eee;
+  border-radius: 5px;
+}
